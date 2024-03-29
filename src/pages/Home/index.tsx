@@ -3,9 +3,6 @@ import React from "react";
 import {HomeScreenProps} from "../../utils/interface";
 
 const Home = ({navigation}: HomeScreenProps) => {
-    const namaDepan: string = "Ridho";
-    const test = `nama: ${namaDepan}`;
-
     return (
         <View
             style={{
