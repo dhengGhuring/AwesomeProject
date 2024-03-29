@@ -1,18 +1,19 @@
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {NativeStackNavigationProp} from "@react-navigation/native-stack";
 
 // Tentukan tipe stack navigator
 type RootStackParamList = {
-  HomeScreen: undefined;
-  SecondScreen: undefined;
-  // ... tambahkan rute lain
+    HomeScreen: undefined;
+    SecondScreen: undefined;
+    SplashScreen: undefined;
+    // ... tambahkan rute lain
 };
 
 // Tipe untuk prop navigation pada HomeScreen
 type HomeScreenNavigationProp = NativeStackNavigationProp<
-  RootStackParamList,
-  'HomeScreen'
+    RootStackParamList,
+    "HomeScreen"
 >;
 
 export interface HomeScreenProps {
-  navigation: HomeScreenNavigationProp;
+    navigation: HomeScreenNavigationProp;
 }

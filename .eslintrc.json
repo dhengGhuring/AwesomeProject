@@ -1,0 +1,17 @@
+{
+    "root": true,
+    "extends": "@react-native",
+    "rules": {
+        "react-native/no-inline-styles": 0,
+        "no-unused-vars": "off",
+        "quotes": ["error", "double", {"allowTemplateLiterals": true}],
+        "prettier/prettier": [
+            "error",
+            {
+                "no-inline-styles": false,
+                "endOfLine": "auto",
+                "tabWidth": 4
+            }
+        ]
+    }
+}
