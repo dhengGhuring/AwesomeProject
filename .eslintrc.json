@@ -1,17 +1,19 @@
 {
     "root": true,
-    "extends": "@react-native",
+    "extends": ["@react-native", "prettier"],
     "rules": {
         "react-native/no-inline-styles": 0,
-        "no-unused-vars": "off",
-        "quotes": ["error", "double", {"allowTemplateLiterals": true}],
-        "prettier/prettier": [
+        // "no-unused-vars": "off",
+        "no-unused-vars": [
             "error",
-            {
-                "no-inline-styles": false,
-                "endOfLine": "auto",
-                "tabWidth": 4
-            }
-        ]
+            {"vars": "all", "args": "after-used", "ignoreRestSiblings": false}
+        ],
+        "quotes": ["error", "double", {"allowTemplateLiterals": true}],
+        "prettier/prettier": ["error"]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }

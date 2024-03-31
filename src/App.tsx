@@ -5,6 +5,7 @@ import {NavigationContainer} from "@react-navigation/native";
 import Router from "./router";
 
 function App() {
+    // Pemanggilan Router
     return (
         <NavigationContainer>
             <Router />
